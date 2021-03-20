@@ -13,11 +13,11 @@ class CreateReviewsTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
-            $table->integer('product_id')->unsigned()->index();
-
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->unsignedBigInteger('product_id');
+            $table->foreign('product_id')->references('id')->on('products');
             $table->string('customer');
             $table->text('review');
             $table->integer('star');
