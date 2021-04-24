@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\product;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,13 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+// Route::get('/test', function () {
+
+//     // $user = product::where('name', 'temporibus')->pluck('detail');
+
+//     $user = product::where('name', 'temporibus')->get();
+
+//     return $user;
+// });
