@@ -11,7 +11,7 @@ A simple ecommerce API to fetch products and get reviews on each products.
 <div>
 <img src="image/1.png">
 </div>
-<li>Fetch single products<br>  "/api/products/id" /li>
+<li>Fetch single products<br>  "/api/products/id" </li>
 <div>
 <img src="image/2.png">
 </div>
